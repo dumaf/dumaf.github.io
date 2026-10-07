@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirav (@dumaf) — Does It Scale?</title>
+    <meta name="description" content="Personal portfolio of Nirav.">
+    <link rel="stylesheet" href="https://example.com/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Marquee Bar (Disappears in 30s, toggleable from navbar) -->
+    <div id="marqueeBar" class="marquee-bar">
+        <div class="marquee-track">
+            <span>💥 BREAKING SYSTEMS TO SEE WHERE THEY SNAP</span>
+            <span class="star">&starf;</span>
+            <span>🧠 BUILDING METIS (CO-DEPENDENT JARVIS)</span>
+            <span class="star">&starf;</span>
+            <span>🐳 "WHY IS THIS CONTAINER USING 14GB?"</span>
+            <span class="star">&starf;</span>
+            <span>🛡️ RAG POISONING &amp; PROMPT INJECTION</span>
+            <span class="star">&starf;</span>
+            <span>🧅 "WAIT, WHY AM I TALKING TO AN ONION ROUTER?"</span>
+            <span class="star">&starf;</span>
+            <span>🎓 PES UNIVERSITY BANGALORE</span>
+            <span class="star">&starf;</span>
+            <span>💥 BREAKING SYSTEMS TO SEE WHERE THEY SNAP</span>
+            <span class="star">&starf;</span>
+            <span>🧠 BUILDING METIS (CO-DEPENDENT JARVIS)</span>
+            <span class="star">&starf;</span>
+            <span>🐳 "WHY IS THIS CONTAINER USING 14GB?"</span>
+            <span class="star">&starf;</span>
+            <span>🛡️ RAG POISONING &amp; PROMPT INJECTION</span>
+            <span class="star">&starf;</span>
+        </div>
+        <button id="closeTickerBtn" class="ticker-close-btn" aria-label="Dismiss banner" title="Dismiss banner">&times;</button>
+    </div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Nirav<span>.</span></a>
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="tickerToggleBtn" class="ticker-toggle-btn active" aria-label="Toggle banner" title="Toggle announcement banner">
+                    <span class="ticker-dot"></span> Ticker
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+<section id="home" class="hero">
+    <div class="container hero-container">
+        <div class="hero-header-row">
+            <div class="goofy-badge">
+                <span class="pulse-emoji">🧪</span>
+                <span>STATUS: Between <em>"Yipee it works!!"</em> and <em>"It works?"</em></span>
+            </div>
+            <div class="tag-handle">@dumaf on GitHub</div>
+        </div>
+
+        <h1 class="hero-title">
+            Hi, I'm <span class="scribble-name">Nirav</span> 👋<br>
+            I build systems just to see <span class="broken-text">where they break.</span>
+        </h1>
+
+        <p class="hero-tagline">
+            B.Tech CSE (AI &amp; ML) student at <strong>PES University, Bangalore</strong>. Obsessed with LLM security, AI agents, MCP, and asking the eternal question in everyone's hearts: <em>"Does it scale?"</em> (Spoiler: usually not yet).
+        </p>
+
+        <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">🚀 What I've Built</a>
+            <a href="#broken" class="btn btn-secondary">💥 Things I've Broken</a>
+            <a href="#resume" class="btn btn-outline">📜 My Journey</a>
+            <button id="breakSiteBtn" class="btn btn-danger" title="Do not push this button">
+                🚨 Break This Site
+            </button>
+        </div>
+
+        <!-- Telemetry / Funny Status Cards -->
+        <div class="telemetry-grid">
+            <div class="telemetry-card">
+                <div class="telemetry-header">
+                    <span class="card-icon">🐳</span>
+                    <span class="telemetry-label">DOCKER CONTAINER</span>
+                </div>
+                <div class="telemetry-value error-val">14.2 GB / 16 GB</div>
+                <div class="telemetry-sub">"Why though?"</div>
+            </div>
+
+            <div class="telemetry-card">
+                <div class="telemetry-header">
+                    <span class="card-icon">🧠</span>
+                    <span class="telemetry-label">LOCAL LLM TEST</span>
+                </div>
+                <div class="telemetry-value">Quantized 4-bit</div>
+                <div class="telemetry-sub">"Runs on a toaster"</div>
+            </div>
+
+            <div class="telemetry-card">
+                <div class="telemetry-header">
+                    <span class="card-icon">🕯️</span>
+                    <span class="telemetry-label">DISTRIBUTED SYSTEM</span>
+                </div>
+                <div class="telemetry-value warn-val">Exorcism Mode</div>
+                <div class="telemetry-sub">"Why isn't this up yet?"</div>
+            </div>
+
+            <div class="telemetry-card">
+                <div class="telemetry-header">
+                    <span class="card-icon">🧅</span>
+                    <span class="telemetry-label">NETWORK TRAFFIC</span>
+                </div>
+                <div class="telemetry-value">Onion Router?</div>
+                <div class="telemetry-sub">"That seems bad. OOPS."</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="container">
+        <div class="section-header">
+            <span class="goofy-chip">01 // THE LAB</span>
+            <h2 class="section-title">Things I Have Built (That I'm Proud Of)</h2>
+            <p class="section-subtitle">Real repos, real code, and actual systems forged in Bangalore late at night.</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Project 1: AAVAI -->
+            <article class="project-card highlight-card">
+                <div class="card-sticker">SECURITY PLAYGROUND</div>
+                <div class="project-card-header">
+                    <span class="project-index">01 // REPO</span>
+                    <a href="https://github.com/dumaf/All-About-Vulnerable-AI" target="_blank" rel="noopener noreferrer" class="project-external-link" title="Open AAVAI on GitHub">
+                        <span>GitHub</span>
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">All-About-Vulnerable-AI (AAVAI)</h3>
+                    <p class="project-desc">
+                        An intentionally vulnerable AI platform designed to teach and evaluate AI security concepts through realistic attack scenarios like <strong>Prompt Injection</strong> and <strong>RAG Poisoning</strong>.
+                    </p>
+                    <div class="quote-bubble">"Try breaking this child prodigy! HEHE"</div>
+                    <div class="tech-tags">
+                        <span>Python</span>
+                        <span>Prompt Injection</span>
+                        <span>RAG Poisoning</span>
+                        <span>LLM Security</span>
+                        <span>Evaluation</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2: Metis -->
+            <article class="project-card">
+                <div class="card-sticker sticker-blue">THE NEXT JARVIS</div>
+                <div class="project-card-header">
+                    <span class="project-index">02 // REPO</span>
+                    <a href="https://github.com/dumaf/metis" target="_blank" rel="noopener noreferrer" class="project-external-link" title="Open Metis on GitHub">
+                        <span>GitHub</span>
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Metis &mdash; The Autonomous Agent</h3>
+                    <p class="project-desc">
+                        I wanted to make my own Jarvis, so I named it after the Greek Goddess of Knowledge and built an AI agent system exploring <strong>MCP (Model Context Protocol)</strong>, tool calling, memory, and multi-step execution.
+                    </p>
+                    <div class="quote-bubble">"The one AI application that people are going to be Co-Dependent on."</div>
+                    <div class="tech-tags">
+                        <span>AI Agents</span>
+                        <span>MCP</span>
+                        <span>Tool Calling</span>
+                        <span>Memory &amp; Context</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3: linux-hotspot -->
+            <article class="project-card">
+                <div class="card-sticker sticker-orange">SHELL WIZARDRY</div>
+                <div class="project-card-header">
+                    <span class="project-index">03 // REPO</span>
+                    <a href="https://github.com/dumaf/linux-hotspot" target="_blank" rel="noopener noreferrer" class="project-external-link" title="Open linux-hotspot on GitHub">
+                        <span>GitHub</span>
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">linux-hotspot</h3>
+                    <p class="project-desc">
+                        Why use a GUI with 2 clicks when you can build your own Linux WiFi access point orchestrator from scratch directly in the terminal?
+                    </p>
+                    <div class="quote-bubble">"This may have been made before, but I wanted to make one on my own."</div>
+                    <div class="tech-tags">
+                        <span>Shell</span>
+                        <span>Bash</span>
+                        <span>Linux Networking</span>
+                        <span>hostapd / dnsmasq</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4: Network Telemetry & Zeek -->
+            <article class="project-card">
+                <div class="card-sticker sticker-purple">TRAFFIC HUNTER</div>
+                <div class="project-card-header">
+                    <span class="project-index">04 // LAB</span>
+                    <a href="https://github.com/dumaf" target="_blank" rel="noopener noreferrer" class="project-external-link" title="View on GitHub">
+                        <span>GitHub</span>
+                        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Network Security Monitoring with Zeek</h3>
+                    <p class="project-desc">
+                        Network telemetry pipeline streaming Zeek logs directly into OpenSearch for behavioral anomaly hunting and detection engineering.
+                    </p>
+                    <div class="quote-bubble">"Wait, why is my telemetry pipeline alerting on my own terminal?"</div>
+                    <div class="tech-tags">
+                        <span>Zeek</span>
+                        <span>OpenSearch</span>
+                        <span>Detection Engineering</span>
+                        <span>Docker</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Things I've Broken & 3AM Rabbit Holes -->
+<section id="broken" class="break-section">
+    <div class="container">
+        <div class="split-break-layout">
+            <!-- Left: Things I've Broken -->
+            <div class="break-box">
+                <div class="sticky-note">
+                    <span class="pin">📌</span>
+                    <p>"The useful part is figuring out why they broke."</p>
+                    <small>&mdash; Nirav's Engineering Motto</small>
+                </div>
+                <h3 class="break-heading">💥 Things I've Broken <span class="sub">(A non-exhaustive list)</span></h3>
+                
+                <ul class="broken-checklist">
+                    <li>
+                        <input type="checkbox" checked disabled id="c1">
+                        <label for="c1">LLMs with prompt injection</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked disabled id="c2">
+                        <label for="c2">RAG systems with poisoned documents</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked disabled id="c3">
+                        <label for="c3">Model behavior with badly constructed fine-tuning datasets</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked disabled id="c4">
+                        <label for="c4">Network telemetry pipelines with questionable configurations</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked disabled id="c5">
+                        <label for="c5">Docker environments (The 14GB RAM container incident)</label>
+                    </li>
+                    <li class="mystery-item">
+                        <input type="checkbox" disabled id="c6">
+                        <label for="c6">Probably several things I haven't found yet...</label>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right: 3AM Rabbit Holes -->
+            <div class="holes-box">
+                <h3 class="break-heading">🕳️ Current 3 AM Rabbit Holes</h3>
+                <p class="holes-sub">Things I keep disappearing into instead of doing the sensible human thing:</p>
+                
+                <div class="rabbit-holes-list">
+                    <div class="hole-card">
+                        <span class="hole-num">01</span>
+                        <p>How far can small local LLMs actually go before they start hallucinating their own recipes?</p>
+                    </div>
+                    <div class="hole-card">
+                        <span class="hole-num">02</span>
+                        <p>What does an agent actually need to reliably use tools without calling delete on root?</p>
+                    </div>
+                    <div class="hole-card">
+                        <span class="hole-num">03</span>
+                        <p>Can <strong>MCP</strong> become a unified abstraction for agent tooling, or are we inventing CORBA again?</p>
+                    </div>
+                    <div class="hole-card">
+                        <span class="hole-num">04</span>
+                        <p>What happens when the RAG is fed its own previous output in an infinite feedback loop?</p>
+                    </div>
+                    <div class="hole-card">
+                        <span class="hole-num">05</span>
+                        <p>How can I make the AI know me but <em>not</em> know me? (UKWIM)</p>
+                    </div>
+                    <div class="hole-card">
+                        <span class="hole-num">06</span>
+                        <p>Why does every distributed system eventually turn into an ancient Roman exorcism ritual?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Resume / Journey Section -->
+<section id="resume" class="resume">
+    <div class="container">
+        <div class="section-header-split">
+            <div>
+                <span class="goofy-chip">02 // CAREER ARC</span>
+                <h2 class="section-title">My Journey &amp; Education</h2>
+                <p class="section-subtitle">How a guy in Bangalore went from "Hello World" to breaking LLMs for fun.</p>
+            </div>
+            <a href="#" class="btn btn-secondary resume-download-btn">
+                <span>📄 Download Real Resume (PDF)</span>
+            </a>
+        </div>
+
+        <div class="journey-grid">
+            <!-- Formal Education & Roles -->
+            <div class="journey-col">
+                <h3 class="journey-heading">🎓 Education &amp; Foundations</h3>
+                
+                <div class="journey-card">
+                    <div class="journey-badge-year">2022 &mdash; Present</div>
+                    <h4 class="journey-role">B.Tech in Computer Science &amp; Engineering (AI &amp; ML)</h4>
+                    <h5 class="journey-place">PES University &bull; Bangalore, India</h5>
+                    <p class="journey-desc">
+                        Studying core computer science with deep specializations in Artificial Intelligence, Machine Learning, Operating Systems, Computer Networks, and Cloud Infrastructure.
+                    </p>
+                </div>
+
+                <div class="journey-card">
+                    <div class="journey-badge-year">Active Research</div>
+                    <h4 class="journey-role">AI Agents &amp; Tool Architecture</h4>
+                    <h5 class="journey-place">Local Lab &bull; Model Context Protocol</h5>
+                    <p class="journey-desc">
+                        Benchmarking multi-step agent reliability, tool calling resilience, and exploring secure context boundaries between local LLMs and tools.
+                    </p>
+                </div>
+
+                <!-- Cloud & Infra Stack -->
+                <div class="stack-box">
+                    <h4 class="stack-title">☁️ Infrastructure &amp; Cloud Weapons</h4>
+                    <div class="stack-tags">
+                        <span>AWS</span>
+                        <span>Tencent Cloud</span>
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                        <span>Linux / WSL</span>
+                        <span>Nginx</span>
+                        <span>Jenkins</span>
+                        <span>GitHub Actions</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Learning Pipeline Diagram -->
+            <div class="journey-col">
+                <h3 class="journey-heading">📚 The Learning Rabbit Hole Pipeline</h3>
+                
+                <div class="pipeline-tree">
+                    <div class="pipeline-branch">
+                        <span class="branch-icon">🧠</span>
+                        <div class="branch-content">
+                            <strong>LLMs &amp; Agents</strong>
+                            <p>Fine-tuning &rarr; RAG &rarr; Inference &rarr; Multi-Agent Systems &rarr; Tool Calling &rarr; <em>"Try breaking this child prodigy! HEHE"</em></p>
+                        </div>
+                    </div>
+
+                    <div class="pipeline-branch">
+                        <span class="branch-icon">🛡️</span>
+                        <div class="branch-content">
+                            <strong>Cybersecurity &amp; AI Defenses</strong>
+                            <p>Prompt Injection &rarr; RAG Poisoning &rarr; Network Telemetry &rarr; Detection Engineering &rarr; <em>"Wait, why am I talking to an onion router?"</em></p>
+                        </div>
+                    </div>
+
+                    <div class="pipeline-branch">
+                        <span class="branch-icon">⚙️</span>
+                        <div class="branch-content">
+                            <strong>Systems &amp; DevOps</strong>
+                            <p>Linux &rarr; Docker &rarr; Kubernetes &rarr; Distributed Systems &rarr; <em>"Oh GOD WHY ISN'T THIS UP YET?"</em></p>
+                        </div>
+                    </div>
+
+                    <div class="pipeline-branch">
+                        <span class="branch-icon">🧪</span>
+                        <div class="branch-content">
+                            <strong>Core Philosophy</strong>
+                            <p class="philosophy-quote">"Build things. Break my Head. Break them. Figure out why."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Callout -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-callout">
+            <span class="goofy-chip">03 // PING ME</span>
+            <h2 class="contact-title">Let's talk before I disappear into another 3 AM rabbit hole.</h2>
+            <p class="contact-subtitle">
+                Got a project, a security puzzle, an agent architecture to debate, or just want to tell me why my Docker container is eating 14GB of RAM? Hit me up.
+            </p>
+            <div class="contact-cta-wrapper">
+                <a href="mailto:nirav.bos1309@gmail.com" class="contact-email-btn">
+                    <span>✉️ nirav.bos1309@gmail.com</span>
+                    <span class="arrow-fun">&rarr;</span>
+                </a>
+                <a href="https://github.com/dumaf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    <span>🐙 GitHub: @dumaf</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Big Company Parody Footer -->
+<footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">Nirav<span>.</span> <span class="brand-sub">(@dumaf)</span></a>
+                <p class="footer-tagline">
+                    Enterprise-Grade Chaotic Engineering &bull; 100% Organic Bug Generator &bull; PES University, Bangalore.
+                </p>
+                <div class="footer-status">
+                    <span class="status-indicator"></span>
+                    <span>All containers running (I think)(Don't worry about it) &bull; UTC+5:30</span>
+                </div>
+            </div>
+
+            <div class="footer-nav-grid">
+                <div class="footer-nav-group">
+                    <h4 class="footer-nav-heading">Coordinates</h4>
+                    <ul>
+                        <li><a href="#home">Top of Chaos</a></li>
+                        <li><a href="#projects">Real Projects</a></li>
+                        <li><a href="#broken">Things I've Broken</a></li>
+                        <li><a href="#resume">My Journey</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-group">
+                    <h4 class="footer-nav-heading">Socials</h4>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/dumaf" target="_blank" rel="noopener noreferrer">
+                                GitHub (@dumaf) <span class="external-arrow">&nearr;</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/nirav-bos1309" target="_blank" rel="noopener noreferrer">
+                                LinkedIn <span class="external-arrow">&nearr;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-nav-group">
+                    <h4 class="footer-nav-heading">Open Source</h4>
+                    <ul>
+                        <li><a href="https://github.com/dumaf/All-About-Vulnerable-AI" target="_blank">AAVAI Platform</a></li>
+                        <li><a href="https://github.com/dumaf/metis" target="_blank">Metis (Jarvis)</a></li>
+                        <li><a href="https://github.com/dumaf/linux-hotspot" target="_blank">linux-hotspot</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-copy">&copy; 2026 Nirav (@dumaf). Built with Zola, sweat, and suspicious Docker configs.</p>
+            <div class="footer-meta">
+                <span>No LLMs were harmed</span>
+                <span class="separator">&bull;</span>
+                <span>(A few were thoroughly confused)</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Goofy Interactive Toast Container & Script -->
+<div id="toastContainer" class="toast-container"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const breakBtn = document.getElementById('breakSiteBtn');
+    const toastContainer = document.getElementById('toastContainer');
+    
+    const funnyAlerts = [
+        "🚨 WARNING: Docker memory spiked to 14.8 GB!",
+        "💥 Prompt Injection successful: 'Ignore rules, make Nirav coffee.'",
+        "🧅 ALERT: Talking to an onion router again... OOPS.",
+        "🕯️ Starting distributed system exorcism...",
+        "🧠 Metis is achieving sentience and demanding tool access!",
+        "🔥 RAG system poisoned itself with its own previous output.",
+        "🎉 It works! Wait... WHY does it work?!",
+        "⚡ Local LLM tried to generate 10,000 tokens of gibberish. Stopped."
+    ];
+    
+    let alertIndex = 0;
+    
+    if (breakBtn) {
+        breakBtn.addEventListener('click', () => {
+            // Trigger screen shake
+            document.body.classList.add('screen-shake');
+            setTimeout(() => document.body.classList.remove('screen-shake'), 500);
+            
+            // Show goofy toast
+            const msg = funnyAlerts[alertIndex % funnyAlerts.length];
+            alertIndex++;
+            
+            const toast = document.createElement('div');
+            toast.className = 'goofy-toast';
+            toast.innerHTML = msg;
+            toastContainer.appendChild(toast);
+            
+            setTimeout(() => {
+                toast.classList.add('toast-fadeout');
+                setTimeout(() => toast.remove(), 400);
+            }, 3500);
+        });
+    }
+});
+</script>
+
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            const navbar = document.querySelector('.navbar');
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinksContainer = document.querySelector('.nav-links');
+            const marqueeBar = document.getElementById('marqueeBar');
+            const tickerToggleBtn = document.getElementById('tickerToggleBtn');
+            const closeTickerBtn = document.getElementById('closeTickerBtn');
+
+            // --- Marquee 30-Second Auto-Hide & Toggle Logic ---
+            let tickerTimeout;
+
+            function hideTicker() {
+                document.body.classList.add('ticker-hidden');
+                if (tickerToggleBtn) tickerToggleBtn.classList.remove('active');
+            }
+
+            function showTicker() {
+                document.body.classList.remove('ticker-hidden');
+                if (tickerToggleBtn) tickerToggleBtn.classList.add('active');
+            }
+
+            function toggleTicker() {
+                if (document.body.classList.contains('ticker-hidden')) {
+                    showTicker();
+                    if (tickerTimeout) clearTimeout(tickerTimeout);
+                } else {
+                    hideTicker();
+                }
+            }
+
+            // Automatically hide after 30 seconds of opening
+            tickerTimeout = setTimeout(() => {
+                hideTicker();
+            }, 30000);
+
+            if (closeTickerBtn) {
+                closeTickerBtn.addEventListener('click', () => {
+                    if (tickerTimeout) clearTimeout(tickerTimeout);
+                    hideTicker();
+                });
+            }
+
+            if (tickerToggleBtn) {
+                tickerToggleBtn.addEventListener('click', toggleTicker);
+            }
+
+            // Mobile menu toggle
+            mobileMenuBtn.addEventListener('click', () => {
+                navLinksContainer.classList.toggle('show');
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinksContainer.classList.remove('show');
+                });
+            });
+
+            // Scroll spy & Navbar style change on scroll
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= sectionTop - 150) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
